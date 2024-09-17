@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <script src="https://kit.fontawesome.com/e30ba04312.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script>
+    const bgAnimation = document.getElementById('bganimation');
+
+    const numberOfColorBoxes = 400;
+
+    for(let i=0; i< numberOfColorBoxes; i++){
+      const colorBox = document.add('colorBox');
+      bgAnimation.append(colorBox)
+    }
+  </script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
